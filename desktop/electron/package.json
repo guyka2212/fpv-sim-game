@@ -1,0 +1,8 @@
+{
+  "name": "flysim",
+  "productName": "FPV Sim",
+  "version": "0.1.0",
+  "description": "Realistic FPV drone simulator",
+  "author": "guyka2212",
+  "main": "main.cjs"
+}

@@ -1,0 +1,29 @@
+# Dependencies and build outputs
+node_modules
+dist
+app/
+release/
+*.log
+
+# Desktop app build outputs
+desktop/xr/out
+desktop/electron/icon.ico
+
+# Android build outputs and this computer's SDK path
+android-app/build/
+android-app/app/build/
+android-app/.gradle/
+android-app/local.properties
+android-app/*.apk
+android-app/app/src/main/assets/www/
+
+# The two websites have their own repos (guyka2212/fpv-sim and guyka2212/flysim-servers)
+Game-Website/
+Servers-Website/
+
+# Editor / tool settings
+.claude/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

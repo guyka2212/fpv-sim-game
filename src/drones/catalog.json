@@ -1,0 +1,1491 @@
+[
+  {
+    "id": "whoop75",
+    "name": "Whoop 75 HD",
+    "family": "whoop",
+    "className": "75 mm Whoop",
+    "map": "house",
+    "level": 2,
+    "description": "A bigger whoop with a tiny HD camera: 1102 motors on 1S, 40 mm four-blades. Still bounces off walls, but carries more punch through the hallway.",
+    "armMm": 26.5,
+    "propIn": 1.57,
+    "pitchIn": 1.1,
+    "blades": 4,
+    "mass": 0.034,
+    "kv": 18000,
+    "motor": "1102 18000KV",
+    "stator": [
+      11,
+      2
+    ],
+    "amps": 11,
+    "cells": 1,
+    "mAh": 450,
+    "chem": "lipo",
+    "tw": 3.8,
+    "uptilt": 14,
+    "fov": 125,
+    "rates": "whoop",
+    "colors": {
+      "bell": [
+        0.85,
+        0.85,
+        0.88
+      ],
+      "prop": [
+        0.1,
+        0.55,
+        1.0
+      ],
+      "duct": [
+        0.05,
+        0.05,
+        0.06
+      ],
+      "battery": [
+        0.95,
+        0.3,
+        0.05
+      ]
+    }
+  },
+  {
+    "id": "toothpick3",
+    "name": "Toothpick 3\"",
+    "family": "toothpick",
+    "className": "3\" Toothpick",
+    "map": "bando",
+    "level": 3,
+    "description": "Featherweight 3\" on 4S with 1404 motors and thin arms. Floaty, twitchy and very forgiving when it hits something.",
+    "armMm": 55,
+    "propIn": 3.0,
+    "pitchIn": 2.0,
+    "blades": 3,
+    "mass": 0.12,
+    "kv": 4600,
+    "motor": "1404 4600KV",
+    "stator": [
+      14,
+      4
+    ],
+    "cells": 4,
+    "mAh": 450,
+    "chem": "lipo",
+    "tw": 7.5,
+    "uptilt": 25,
+    "fov": 120,
+    "rates": "freestyle",
+    "colors": {
+      "bell": [
+        0.05,
+        0.75,
+        0.6
+      ],
+      "prop": [
+        0.95,
+        0.95,
+        0.95
+      ],
+      "tpu": [
+        0.05,
+        0.75,
+        0.6
+      ],
+      "battery": [
+        0.1,
+        0.1,
+        0.1
+      ]
+    }
+  },
+  {
+    "id": "whoop65pro",
+    "name": "Whoop 65 Pro",
+    "family": "whoop",
+    "className": "65 mm Pro Whoop",
+    "map": "house",
+    "level": 4,
+    "description": "A race-tuned 65 mm whoop with brushless 0702 motors on 1S HV: snappier and faster than the stock whoop, still soft as a pillow.",
+    "armMm": 23,
+    "propIn": 1.22,
+    "pitchIn": 1.0,
+    "blades": 3,
+    "mass": 0.026,
+    "kv": 27000,
+    "motor": "0702 27000KV",
+    "stator": [
+      7,
+      2
+    ],
+    "amps": 8,
+    "cells": 1,
+    "mAh": 300,
+    "chem": "lipo",
+    "tw": 4.2,
+    "uptilt": 15,
+    "fov": 125,
+    "rates": "whoop",
+    "colors": {
+      "bell": [
+        0.95,
+        0.75,
+        0.05
+      ],
+      "prop": [
+        0.95,
+        0.95,
+        0.95
+      ],
+      "duct": [
+        0.08,
+        0.08,
+        0.09
+      ],
+      "battery": [
+        0.95,
+        0.75,
+        0.05
+      ]
+    }
+  },
+  {
+    "id": "freestyle5lite",
+    "name": "Freestyle 5\" Lite",
+    "family": "freestyle",
+    "className": "5\" Freestyle",
+    "map": "mall",
+    "level": 5,
+    "description": "Stripped-down 5\" with an analog camera and a light pack: 2207 motors, floaty and snappy for technical lines.",
+    "armMm": 79,
+    "propIn": 5.1,
+    "pitchIn": 3.6,
+    "blades": 3,
+    "mass": 0.53,
+    "kv": 1950,
+    "motor": "2207 1950KV",
+    "stator": [
+      22,
+      7
+    ],
+    "cells": 6,
+    "mAh": 1000,
+    "chem": "lipo",
+    "tw": 11,
+    "uptilt": 32,
+    "fov": 120,
+    "rates": "freestyle",
+    "colors": {
+      "bell": [
+        0.9,
+        0.1,
+        0.45
+      ],
+      "prop": [
+        0.95,
+        0.95,
+        0.95
+      ],
+      "tpu": [
+        0.9,
+        0.1,
+        0.45
+      ],
+      "battery": [
+        0.08,
+        0.08,
+        0.08
+      ]
+    }
+  },
+  {
+    "id": "whoop85",
+    "name": "Whoop 85 2S",
+    "family": "whoop",
+    "className": "85 mm 2S Whoop",
+    "map": "house",
+    "level": 6,
+    "description": "2S power in a whoop frame: 1103 motors and 45 mm props. Fast enough to fly outside, still soft enough to hit a curtain.",
+    "armMm": 30,
+    "propIn": 1.77,
+    "pitchIn": 1.3,
+    "blades": 4,
+    "mass": 0.052,
+    "kv": 11000,
+    "motor": "1103 11000KV",
+    "stator": [
+      11,
+      3
+    ],
+    "cells": 2,
+    "mAh": 300,
+    "chem": "lipo",
+    "tw": 4.5,
+    "uptilt": 18,
+    "fov": 125,
+    "rates": "whoop",
+    "colors": {
+      "bell": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "prop": [
+        0.95,
+        0.85,
+        0.1
+      ],
+      "duct": [
+        0.1,
+        0.2,
+        0.85
+      ],
+      "battery": [
+        0.1,
+        0.1,
+        0.1
+      ]
+    }
+  },
+  {
+    "id": "micro25",
+    "name": "Micro Freestyle 2.5\"",
+    "family": "toothpick",
+    "className": "2.5\" Micro",
+    "map": "town",
+    "level": 7,
+    "description": "Pocket freestyler on 3S 1103 motors and 2.5\" props. Small enough for courtyards, punchy enough for real tricks.",
+    "armMm": 45,
+    "propIn": 2.5,
+    "pitchIn": 1.8,
+    "blades": 3,
+    "mass": 0.085,
+    "kv": 8000,
+    "motor": "1103 8000KV",
+    "stator": [
+      11,
+      3
+    ],
+    "cells": 3,
+    "mAh": 450,
+    "chem": "lipo",
+    "tw": 6.5,
+    "uptilt": 25,
+    "fov": 120,
+    "rates": "freestyle",
+    "colors": {
+      "bell": [
+        0.95,
+        0.3,
+        0.05
+      ],
+      "prop": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tpu": [
+        0.95,
+        0.3,
+        0.05
+      ],
+      "battery": [
+        0.1,
+        0.1,
+        0.1
+      ]
+    },
+    "amps": 20
+  },
+  {
+    "id": "cinewhoop25",
+    "name": "Cinewhoop 2.5\"",
+    "family": "cinewhoop",
+    "className": "2.5\" Cinewhoop",
+    "map": "mall",
+    "level": 8,
+    "description": "Small ducted cinewhoop on 4S with 1404 motors. Sneaks through doorways and shop fronts with a smooth, stable picture.",
+    "armMm": 42,
+    "propIn": 2.5,
+    "pitchIn": 2.2,
+    "blades": 5,
+    "mass": 0.23,
+    "kv": 3800,
+    "motor": "1404 3800KV",
+    "stator": [
+      14,
+      4
+    ],
+    "cells": 4,
+    "mAh": 650,
+    "chem": "lipo",
+    "tw": 4.8,
+    "uptilt": 12,
+    "fov": 115,
+    "rates": "cine",
+    "colors": {
+      "bell": [
+        0.15,
+        0.15,
+        0.17
+      ],
+      "prop": [
+        0.05,
+        0.05,
+        0.06
+      ],
+      "duct": [
+        0.85,
+        0.3,
+        0.05
+      ],
+      "battery": [
+        0.1,
+        0.4,
+        0.75
+      ]
+    }
+  },
+  {
+    "id": "trainer3",
+    "name": "Trainer 3\"",
+    "family": "cinewhoop",
+    "className": "3\" Trainer",
+    "map": "town",
+    "level": 9,
+    "description": "Forgiving ducted 3\" with gentle rates and soft throttle: the quad you lend your friends. Bumps off walls and keeps flying.",
+    "armMm": 50,
+    "propIn": 3.0,
+    "pitchIn": 2.2,
+    "blades": 4,
+    "mass": 0.32,
+    "kv": 2700,
+    "motor": "1506 2700KV",
+    "stator": [
+      15,
+      6
+    ],
+    "cells": 4,
+    "mAh": 850,
+    "chem": "lipo",
+    "tw": 4.2,
+    "uptilt": 10,
+    "fov": 115,
+    "rates": "cine",
+    "colors": {
+      "bell": [
+        0.2,
+        0.75,
+        0.3
+      ],
+      "prop": [
+        0.95,
+        0.95,
+        0.95
+      ],
+      "duct": [
+        0.2,
+        0.75,
+        0.3
+      ],
+      "battery": [
+        0.95,
+        0.95,
+        0.95
+      ]
+    }
+  },
+  {
+    "id": "racer4",
+    "name": "Spec Racer 4\"",
+    "family": "racer",
+    "className": "4\" Racer",
+    "map": "racetrack",
+    "level": 10,
+    "description": "Spec-class 4\" on 4S: everyone flies the same power, so the pilot makes the difference. Light and nimble through gates.",
+    "armMm": 65,
+    "propIn": 4.0,
+    "pitchIn": 3.5,
+    "blades": 3,
+    "mass": 0.3,
+    "kv": 2800,
+    "motor": "1806 2800KV",
+    "stator": [
+      18,
+      6
+    ],
+    "cells": 4,
+    "mAh": 850,
+    "chem": "lipo",
+    "tw": 11,
+    "uptilt": 40,
+    "fov": 125,
+    "rates": "racer",
+    "colors": {
+      "bell": [
+        0.85,
+        0.05,
+        0.1
+      ],
+      "prop": [
+        0.95,
+        0.95,
+        0.95
+      ],
+      "tpu": [
+        0.85,
+        0.05,
+        0.1
+      ],
+      "battery": [
+        0.85,
+        0.05,
+        0.1
+      ]
+    }
+  },
+  {
+    "id": "freestyle35",
+    "name": "Freestyle 3.5\" DC",
+    "family": "freestyle",
+    "className": "3.5\" Freestyle",
+    "map": "bando",
+    "level": 11,
+    "description": "Dead-cat 3.5\" with props out of view: 6S 2004 motors, light enough to throw around the bando like a 5\".",
+    "armMm": 62,
+    "propIn": 3.5,
+    "pitchIn": 3.0,
+    "blades": 3,
+    "mass": 0.32,
+    "kv": 2800,
+    "motor": "2004 2800KV",
+    "stator": [
+      20,
+      4
+    ],
+    "cells": 6,
+    "mAh": 650,
+    "chem": "lipo",
+    "tw": 8.5,
+    "uptilt": 28,
+    "fov": 118,
+    "rates": "freestyle",
+    "colors": {
+      "bell": [
+        0.95,
+        0.75,
+        0.05
+      ],
+      "prop": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tpu": [
+        0.95,
+        0.75,
+        0.05
+      ],
+      "battery": [
+        0.15,
+        0.15,
+        0.15
+      ]
+    }
+  },
+  {
+    "id": "cinewhoop35",
+    "name": "Cinewhoop 3.5\"",
+    "family": "cinewhoop",
+    "className": "3.5\" Cinewhoop",
+    "map": "town",
+    "level": 12,
+    "description": "Heavy-lift cinewhoop on 6S 2004 motors carrying a full-size action cam. Glides through streets like a dolly shot.",
+    "armMm": 57,
+    "propIn": 3.5,
+    "pitchIn": 2.8,
+    "blades": 5,
+    "mass": 0.55,
+    "kv": 2700,
+    "motor": "2004 2700KV",
+    "stator": [
+      20,
+      4
+    ],
+    "cells": 6,
+    "mAh": 1050,
+    "chem": "lipo",
+    "tw": 4.6,
+    "uptilt": 10,
+    "fov": 110,
+    "rates": "cine",
+    "gopro": true,
+    "colors": {
+      "bell": [
+        0.6,
+        0.6,
+        0.62
+      ],
+      "prop": [
+        0.08,
+        0.08,
+        0.09
+      ],
+      "duct": [
+        0.06,
+        0.06,
+        0.07
+      ],
+      "battery": [
+        0.75,
+        0.05,
+        0.1
+      ]
+    }
+  },
+  {
+    "id": "racer3",
+    "name": "Micro Racer 3\"",
+    "family": "racer",
+    "className": "3\" Racer",
+    "map": "house",
+    "level": 13,
+    "description": "Tiny race frame on 4S 1404s: indoor gates, parking garages and anywhere a 5\" would be too much.",
+    "armMm": 53,
+    "propIn": 3.0,
+    "pitchIn": 3.0,
+    "blades": 3,
+    "mass": 0.15,
+    "kv": 4600,
+    "motor": "1404 4600KV",
+    "stator": [
+      14,
+      4
+    ],
+    "cells": 4,
+    "mAh": 550,
+    "chem": "lipo",
+    "tw": 9,
+    "uptilt": 38,
+    "fov": 125,
+    "rates": "racer",
+    "colors": {
+      "bell": [
+        0.6,
+        0.1,
+        0.9
+      ],
+      "prop": [
+        0.6,
+        0.1,
+        0.9
+      ],
+      "tpu": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "battery": [
+        0.95,
+        0.95,
+        0.95
+      ]
+    }
+  },
+  {
+    "id": "freestyle4",
+    "name": "Freestyle 4\" Sub-250",
+    "family": "freestyle",
+    "className": "4\" Freestyle",
+    "map": "town",
+    "level": 14,
+    "description": "Under 250 g with a 4S Li-ion or LiPo pack: 1804 motors and 4\" tri-blades. The do-everything quad you can take anywhere.",
+    "armMm": 66,
+    "propIn": 4.0,
+    "pitchIn": 3.0,
+    "blades": 3,
+    "mass": 0.245,
+    "kv": 3500,
+    "motor": "1804 3500KV",
+    "stator": [
+      18,
+      4
+    ],
+    "cells": 4,
+    "mAh": 850,
+    "chem": "lipo",
+    "tw": 7.0,
+    "uptilt": 25,
+    "fov": 120,
+    "rates": "freestyle",
+    "colors": {
+      "bell": [
+        0.2,
+        0.75,
+        0.25
+      ],
+      "prop": [
+        0.2,
+        0.75,
+        0.25
+      ],
+      "tpu": [
+        0.12,
+        0.12,
+        0.12
+      ],
+      "battery": [
+        0.95,
+        0.95,
+        0.95
+      ]
+    }
+  },
+  {
+    "id": "freestyle5hd",
+    "name": "Freestyle 5\" HD Heavy",
+    "family": "freestyle",
+    "className": "5\" Freestyle",
+    "map": "hollywood",
+    "level": 15,
+    "description": "Full-size freestyle rig with an action cam on top and a big 1500 mAh pack. Heavier, more momentum, buttery footage.",
+    "armMm": 81,
+    "propIn": 5.1,
+    "pitchIn": 4.5,
+    "blades": 3,
+    "mass": 0.82,
+    "kv": 1750,
+    "motor": "2306.5 1750KV",
+    "stator": [
+      23,
+      7
+    ],
+    "cells": 6,
+    "mAh": 1500,
+    "chem": "lipo",
+    "tw": 8.5,
+    "uptilt": 30,
+    "fov": 118,
+    "rates": "freestyle",
+    "gopro": true,
+    "colors": {
+      "bell": [
+        0.75,
+        0.75,
+        0.78
+      ],
+      "prop": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tpu": [
+        0.95,
+        0.35,
+        0.05
+      ],
+      "battery": [
+        0.2,
+        0.2,
+        0.22
+      ]
+    }
+  },
+  {
+    "id": "hybrid5",
+    "name": "Hybrid-X 5\"",
+    "family": "freestyle",
+    "className": "5\" Hybrid-X",
+    "map": "bando",
+    "level": 17,
+    "description": "Stretched front arms and a wide back for a locked-in pitch axis: 2207 motors, great for long dives and big orbits.",
+    "armMm": 80,
+    "propIn": 5.1,
+    "pitchIn": 4.3,
+    "blades": 3,
+    "mass": 0.63,
+    "kv": 1850,
+    "motor": "2207 1850KV",
+    "stator": [
+      22,
+      7
+    ],
+    "cells": 6,
+    "mAh": 1300,
+    "chem": "lipo",
+    "tw": 10,
+    "uptilt": 30,
+    "fov": 118,
+    "rates": "freestyle",
+    "colors": {
+      "bell": [
+        0.85,
+        0.85,
+        0.88
+      ],
+      "prop": [
+        0.95,
+        0.4,
+        0.05
+      ],
+      "tpu": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "battery": [
+        0.95,
+        0.4,
+        0.05
+      ]
+    }
+  },
+  {
+    "id": "longrange4",
+    "name": "Long Range 4\" Sub-250",
+    "family": "longrange",
+    "className": "4\" Long Range",
+    "map": "lake",
+    "level": 18,
+    "description": "Sub-250 g cruiser with GPS and a 2S Li-ion pack. Twenty minutes of quiet flying over the lake.",
+    "armMm": 72,
+    "propIn": 4.0,
+    "pitchIn": 2.0,
+    "blades": 2,
+    "mass": 0.24,
+    "kv": 3000,
+    "motor": "1404 3000KV",
+    "stator": [
+      14,
+      4
+    ],
+    "cells": 3,
+    "mAh": 3000,
+    "chem": "liion",
+    "tw": 3.8,
+    "uptilt": 20,
+    "fov": 115,
+    "rates": "lr",
+    "colors": {
+      "bell": [
+        0.25,
+        0.65,
+        0.95
+      ],
+      "prop": [
+        0.75,
+        0.78,
+        0.82
+      ],
+      "tpu": [
+        0.25,
+        0.65,
+        0.95
+      ],
+      "battery": [
+        0.15,
+        0.55,
+        0.25
+      ]
+    }
+  },
+  {
+    "id": "squashed5",
+    "name": "Squashed-X 5\"",
+    "family": "freestyle",
+    "className": "5\" Squashed-X",
+    "map": "paris",
+    "level": 19,
+    "description": "Wide squashed-X geometry for a stable roll axis and a clean picture: 2306 motors, smooth in long carving lines.",
+    "armMm": 82,
+    "propIn": 5.1,
+    "pitchIn": 4.0,
+    "blades": 3,
+    "mass": 0.66,
+    "kv": 1850,
+    "motor": "2306 1850KV",
+    "stator": [
+      23,
+      6
+    ],
+    "cells": 6,
+    "mAh": 1300,
+    "chem": "lipo",
+    "tw": 9.5,
+    "uptilt": 28,
+    "fov": 118,
+    "rates": "freestyle",
+    "colors": {
+      "bell": [
+        0.1,
+        0.45,
+        0.95
+      ],
+      "prop": [
+        0.05,
+        0.85,
+        0.95
+      ],
+      "tpu": [
+        0.1,
+        0.45,
+        0.95
+      ],
+      "battery": [
+        0.1,
+        0.1,
+        0.1
+      ]
+    }
+  },
+  {
+    "id": "carbonblade5",
+    "name": "Carbon Blade 5\"",
+    "family": "racer",
+    "className": "5\" Racer",
+    "map": "f1",
+    "level": 20,
+    "description": "Ultra-low-profile race frame with 2207 motors and a light pack, built to slice through gates and hug the racing line.",
+    "armMm": 76,
+    "propIn": 5.0,
+    "pitchIn": 4.6,
+    "blades": 3,
+    "mass": 0.44,
+    "kv": 2000,
+    "motor": "2207 2000KV",
+    "stator": [
+      22,
+      7
+    ],
+    "cells": 6,
+    "mAh": 1050,
+    "chem": "lipo",
+    "tw": 14,
+    "uptilt": 45,
+    "fov": 125,
+    "rates": "racer",
+    "colors": {
+      "bell": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "prop": [
+        0.05,
+        0.85,
+        0.95
+      ],
+      "tpu": [
+        0.05,
+        0.85,
+        0.95
+      ],
+      "battery": [
+        0.1,
+        0.1,
+        0.1
+      ]
+    }
+  },
+  {
+    "id": "longrange5",
+    "name": "Long Range 5\" Li-ion",
+    "family": "longrange",
+    "className": "5\" Long Range",
+    "map": "mountains",
+    "level": 21,
+    "description": "Efficient 5\" with bi-blades and a 6S Li-ion pack. Freestyle moves when you want, kilometres when you need.",
+    "armMm": 85,
+    "propIn": 5.1,
+    "pitchIn": 3.0,
+    "blades": 2,
+    "mass": 0.72,
+    "kv": 1700,
+    "motor": "2207 1700KV",
+    "stator": [
+      22,
+      7
+    ],
+    "cells": 6,
+    "mAh": 3000,
+    "chem": "liion",
+    "tw": 5.5,
+    "uptilt": 22,
+    "fov": 115,
+    "rates": "lr",
+    "colors": {
+      "bell": [
+        0.05,
+        0.6,
+        0.35
+      ],
+      "prop": [
+        0.75,
+        0.78,
+        0.82
+      ],
+      "tpu": [
+        0.05,
+        0.6,
+        0.35
+      ],
+      "battery": [
+        0.15,
+        0.55,
+        0.25
+      ]
+    }
+  },
+  {
+    "id": "racer5pro",
+    "name": "Pro Racer 5\"",
+    "family": "racer",
+    "className": "5\" Racer",
+    "map": "racetrack",
+    "level": 22,
+    "description": "Pro-level race quad at 15:1 thrust-to-weight: 2306 2050KV motors, a 1100 mAh 6S and a steep 48° camera.",
+    "armMm": 77,
+    "propIn": 5.0,
+    "pitchIn": 5.0,
+    "blades": 3,
+    "mass": 0.46,
+    "kv": 2050,
+    "motor": "2306 2050KV",
+    "stator": [
+      23,
+      6
+    ],
+    "cells": 6,
+    "mAh": 1100,
+    "chem": "lipo",
+    "tw": 15,
+    "uptilt": 48,
+    "fov": 125,
+    "rates": "racer",
+    "colors": {
+      "bell": [
+        0.95,
+        0.85,
+        0.05
+      ],
+      "prop": [
+        0.95,
+        0.85,
+        0.05
+      ],
+      "tpu": [
+        0.05,
+        0.05,
+        0.05
+      ],
+      "battery": [
+        0.95,
+        0.85,
+        0.05
+      ]
+    }
+  },
+  {
+    "id": "freestyle6",
+    "name": "Freestyle 6\"",
+    "family": "freestyle",
+    "className": "6\" Freestyle",
+    "map": "mountains",
+    "level": 24,
+    "description": "Big-air freestyle: 2507 motors swinging 6\" props. Huge hang time over mountain lines, a bit lazier in tight spots.",
+    "armMm": 95,
+    "propIn": 6.0,
+    "pitchIn": 4.0,
+    "blades": 3,
+    "mass": 0.88,
+    "kv": 1600,
+    "motor": "2507 1600KV",
+    "stator": [
+      25,
+      7
+    ],
+    "cells": 6,
+    "mAh": 1800,
+    "chem": "lipo",
+    "tw": 8.5,
+    "uptilt": 30,
+    "fov": 118,
+    "rates": "freestyle",
+    "colors": {
+      "bell": [
+        0.05,
+        0.05,
+        0.05
+      ],
+      "prop": [
+        0.95,
+        0.15,
+        0.1
+      ],
+      "tpu": [
+        0.95,
+        0.15,
+        0.1
+      ],
+      "battery": [
+        0.05,
+        0.05,
+        0.05
+      ]
+    }
+  },
+  {
+    "id": "longrange6",
+    "name": "Long Range 6\" Mountain",
+    "family": "longrange",
+    "className": "6\" Long Range",
+    "map": "mountains",
+    "level": 26,
+    "description": "The sweet spot for mountain surfing: 2306 motors on 6\" bi-blades and a 6S Li-ion. Enough punch to dive, enough range to come back.",
+    "armMm": 95,
+    "propIn": 6.0,
+    "pitchIn": 3.5,
+    "blades": 2,
+    "mass": 0.85,
+    "kv": 1500,
+    "motor": "2306 1500KV",
+    "stator": [
+      23,
+      6
+    ],
+    "cells": 6,
+    "mAh": 4000,
+    "chem": "liion",
+    "tw": 5.5,
+    "uptilt": 22,
+    "fov": 115,
+    "rates": "lr",
+    "colors": {
+      "bell": [
+        0.95,
+        0.55,
+        0.05
+      ],
+      "prop": [
+        0.75,
+        0.78,
+        0.82
+      ],
+      "tpu": [
+        0.95,
+        0.55,
+        0.05
+      ],
+      "battery": [
+        0.15,
+        0.55,
+        0.25
+      ]
+    }
+  },
+  {
+    "id": "cinelifter8",
+    "name": "Cinelifter 8\"",
+    "family": "cinelifter",
+    "className": "8\" Cinelifter",
+    "map": "stadium",
+    "level": 28,
+    "description": "Camera ship for a full cinema camera: 2810 motors on 8\" props, slow and steady for sweeping stadium shots.",
+    "armMm": 130,
+    "propIn": 8.0,
+    "pitchIn": 4.5,
+    "blades": 3,
+    "mass": 2.4,
+    "kv": 1100,
+    "motor": "2810 1100KV",
+    "stator": [
+      28,
+      10
+    ],
+    "cells": 6,
+    "mAh": 5000,
+    "chem": "lipo",
+    "tw": 4.0,
+    "uptilt": 8,
+    "fov": 100,
+    "rates": "cine",
+    "colors": {
+      "bell": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "prop": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tpu": [
+        0.6,
+        0.6,
+        0.62
+      ],
+      "battery": [
+        0.08,
+        0.08,
+        0.08
+      ]
+    }
+  },
+  {
+    "id": "freestyle7",
+    "name": "Freestyle 7\" Bando Basher",
+    "family": "freestyle",
+    "className": "7\" Freestyle",
+    "map": "bando",
+    "level": 30,
+    "description": "Big 7\" freestyle on 2807 motors: slow, heavy, dramatic. Huge power loops and dives that feel like a full-size aircraft.",
+    "armMm": 112,
+    "propIn": 7.0,
+    "pitchIn": 4.0,
+    "blades": 3,
+    "mass": 1.1,
+    "kv": 1300,
+    "motor": "2807 1300KV",
+    "stator": [
+      28,
+      7
+    ],
+    "cells": 6,
+    "mAh": 2200,
+    "chem": "lipo",
+    "tw": 7,
+    "uptilt": 30,
+    "fov": 118,
+    "rates": "freestyle",
+    "colors": {
+      "bell": [
+        0.6,
+        0.05,
+        0.85
+      ],
+      "prop": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "tpu": [
+        0.6,
+        0.05,
+        0.85
+      ],
+      "battery": [
+        0.1,
+        0.1,
+        0.1
+      ]
+    }
+  },
+  {
+    "id": "longrange10",
+    "name": "Long Range 10\"",
+    "family": "longrange",
+    "className": "10\" Long Range",
+    "map": "mountains",
+    "level": 33,
+    "description": "Big 10\" cruiser on 3115 900KV motors and an 8000 mAh Li-ion pack. Slow to turn, unstoppable in a straight line.",
+    "armMm": 160,
+    "propIn": 10.0,
+    "pitchIn": 5.0,
+    "blades": 2,
+    "mass": 1.9,
+    "kv": 900,
+    "motor": "3115 900KV",
+    "stator": [
+      31,
+      15
+    ],
+    "cells": 6,
+    "mAh": 8000,
+    "chem": "liion",
+    "tw": 4.2,
+    "uptilt": 18,
+    "fov": 112,
+    "rates": "lr",
+    "colors": {
+      "bell": [
+        0.85,
+        0.85,
+        0.88
+      ],
+      "prop": [
+        0.12,
+        0.12,
+        0.12
+      ],
+      "tpu": [
+        0.95,
+        0.5,
+        0.05
+      ],
+      "battery": [
+        0.15,
+        0.55,
+        0.25
+      ]
+    }
+  },
+  {
+    "id": "lifter10",
+    "name": "Heavy Lifter 10\"",
+    "family": "cinelifter",
+    "className": "10\" Heavy Lifter",
+    "map": "stadium",
+    "level": 36,
+    "description": "10\" camera ship on 3115 motors for the biggest cinema rigs. Floats like a crane, needs space to turn.",
+    "armMm": 165,
+    "propIn": 10.0,
+    "pitchIn": 5.0,
+    "blades": 3,
+    "mass": 3.6,
+    "kv": 900,
+    "motor": "3115 900KV",
+    "stator": [
+      31,
+      15
+    ],
+    "cells": 6,
+    "mAh": 8000,
+    "chem": "lipo",
+    "tw": 3.6,
+    "uptilt": 6,
+    "fov": 100,
+    "rates": "cine",
+    "colors": {
+      "bell": [
+        0.85,
+        0.85,
+        0.88
+      ],
+      "prop": [
+        0.08,
+        0.08,
+        0.08
+      ],
+      "tpu": [
+        0.85,
+        0.85,
+        0.88
+      ],
+      "battery": [
+        0.08,
+        0.08,
+        0.08
+      ]
+    }
+  },
+  {
+    "id": "xclass",
+    "name": "X-Class 13\"",
+    "family": "racer",
+    "className": "X-Class",
+    "map": "f1",
+    "level": 39,
+    "description": "The monster of drone racing: 13\" props on 4214 motors and 12S, over 3 kg flying past 150 km/h. Chase the F1 cars.",
+    "armMm": 230,
+    "propIn": 13.0,
+    "pitchIn": 7.0,
+    "blades": 3,
+    "mass": 3.2,
+    "kv": 660,
+    "motor": "4214 660KV",
+    "stator": [
+      42,
+      14
+    ],
+    "amps": 140,
+    "cells": 12,
+    "mAh": 2200,
+    "chem": "lipo",
+    "tw": 8,
+    "uptilt": 35,
+    "fov": 118,
+    "rates": "lr",
+    "colors": {
+      "bell": [
+        0.85,
+        0.05,
+        0.05
+      ],
+      "prop": [
+        0.05,
+        0.05,
+        0.05
+      ],
+      "tpu": [
+        0.85,
+        0.05,
+        0.05
+      ],
+      "battery": [
+        0.05,
+        0.05,
+        0.05
+      ]
+    }
+  },
+  {
+    "id": "longrange13",
+    "name": "Long Range 13\" Endurance",
+    "family": "longrange",
+    "className": "13\" Long Range",
+    "map": "mountains",
+    "level": 42,
+    "description": "Endurance cruiser on 13\" props and 4214 400KV motors with a big 6S Li-ion pack. Glides for ages; turns like a ship.",
+    "armMm": 230,
+    "propIn": 13.0,
+    "pitchIn": 6.5,
+    "blades": 2,
+    "mass": 3.4,
+    "kv": 400,
+    "motor": "4214 400KV",
+    "stator": [
+      42,
+      14
+    ],
+    "amps": 60,
+    "cells": 6,
+    "mAh": 12000,
+    "chem": "liion",
+    "tw": 3.2,
+    "uptilt": 15,
+    "fov": 110,
+    "rates": "lr",
+    "colors": {
+      "bell": [
+        0.05,
+        0.3,
+        0.85
+      ],
+      "prop": [
+        0.12,
+        0.12,
+        0.12
+      ],
+      "tpu": [
+        0.05,
+        0.3,
+        0.85
+      ],
+      "battery": [
+        0.15,
+        0.55,
+        0.25
+      ]
+    }
+  },
+  {
+    "id": "goldrush5",
+    "name": "Gold Rush 5\"",
+    "family": "freestyle",
+    "className": "5\" Freestyle",
+    "map": "paris",
+    "level": 45,
+    "description": "The Flight Path trophy: a tuned 2306 freestyle 5\" in polished gold, with a little extra punch. Show it off on a server.",
+    "armMm": 80,
+    "propIn": 5.1,
+    "pitchIn": 4.3,
+    "blades": 3,
+    "mass": 0.62,
+    "kv": 1900,
+    "motor": "2306 1900KV",
+    "stator": [
+      23,
+      6
+    ],
+    "cells": 6,
+    "mAh": 1300,
+    "chem": "lipo",
+    "tw": 11.5,
+    "uptilt": 30,
+    "fov": 118,
+    "rates": "freestyle",
+    "metal": true,
+    "colors": {
+      "bell": [
+        1.0,
+        0.76,
+        0.2
+      ],
+      "prop": [
+        1.0,
+        0.76,
+        0.2
+      ],
+      "tpu": [
+        0.08,
+        0.08,
+        0.08
+      ],
+      "battery": [
+        1.0,
+        0.76,
+        0.2
+      ],
+      "carbon": [
+        0.85,
+        0.62,
+        0.15
+      ]
+    }
+  },
+  {
+    "id": "titan5",
+    "name": "Titan 5\" Prototype",
+    "family": "freestyle",
+    "className": "5\" Prototype",
+    "map": "stadium",
+    "level": 50,
+    "description": "The final reward: a black-and-orange titanium prototype with the strongest motors in the game. Only level 50 pilots fly it.",
+    "armMm": 80,
+    "propIn": 5.1,
+    "pitchIn": 4.5,
+    "blades": 3,
+    "mass": 0.6,
+    "kv": 2000,
+    "motor": "2306.5 2000KV",
+    "stator": [
+      23,
+      7
+    ],
+    "cells": 6,
+    "mAh": 1300,
+    "chem": "lipo",
+    "tw": 13,
+    "uptilt": 32,
+    "fov": 118,
+    "rates": "freestyle",
+    "metal": true,
+    "colors": {
+      "bell": [
+        1.0,
+        0.42,
+        0.05
+      ],
+      "prop": [
+        1.0,
+        0.42,
+        0.05
+      ],
+      "tpu": [
+        0.06,
+        0.06,
+        0.06
+      ],
+      "battery": [
+        0.06,
+        0.06,
+        0.06
+      ],
+      "carbon": [
+        0.12,
+        0.12,
+        0.13
+      ]
+    }
+  }
+]

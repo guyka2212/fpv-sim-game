@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>FPV Sim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <canvas id="view"></canvas>
+    <div id="analog"><canvas id="noise" width="160" height="90"></canvas></div>
+
+    <div id="osd" class="hidden">
+      <canvas id="osd-ahi"></canvas>
+      <div class="osd-tl"><div id="osd-batt"></div></div>
+      <div class="osd-tc"><div id="osd-time"></div><div id="osd-race"></div><div id="osd-rec"></div></div>
+      <div class="osd-tr"><div id="osd-mah"></div></div>
+      <div id="osd-cross"></div>
+      <div id="osd-msg"></div>
+      <div class="osd-bl"><div id="osd-signal"></div><div id="osd-thr"></div></div>
+      <div class="osd-bc"><div id="osd-arm"></div><div id="osd-mode"></div></div>
+      <div class="osd-br"><div id="osd-alt"></div><div id="osd-speed"></div><div id="osd-home"></div></div>
+      <div id="osd-sticks"><div class="stick" id="stick-l"><i></i></div><div class="stick" id="stick-r"><i></i></div></div>
+      <div id="osd-help">Esc / Start: menu &nbsp; R / B: reset &nbsp; C / X: camera &nbsp; N / Y: mode &nbsp; M / Back: map &nbsp; V: record &nbsp; T: chat</div>
+    </div>
+
+    <canvas id="minimap" class="mm-tr"></canvas>
+    <div id="tricks"></div>
+    <div id="levelup" class="hidden"><div class="lu-lv"></div><div class="lu-text"></div></div>
+
+    <div id="chat" class="hidden"><div id="chat-lines"></div><input id="chat-input" class="hidden" type="text" maxlength="200" placeholder="Say something (Enter sends, Esc closes)" /></div>
+
+    <div id="loading" class="hidden"><div class="spinner"></div><div id="loading-text">Loading…</div></div>
+
+    <div id="menu">
+      <header>
+        <div class="logo">FPV<span>SIM</span></div>
+        <nav id="tabs">
+          <button data-tab="drones" class="active">Drones</button>
+          <button data-tab="maps">Maps</button>
+          <button data-tab="multiplayer">Multiplayer</button>
+          <button data-tab="pass">Flight Path</button>
+          <button data-tab="controls">Controls</button>
+          <button data-tab="records">Records</button>
+          <button data-tab="settings">Settings</button>
+          <button data-tab="plugins">Plugins</button>
+        </nav>
+        <button id="acct-chip">Sign in</button>
+        <button id="vr" class="hidden">VR (Quest)</button>
+        <button id="fly" class="fly">FLY ▶</button>
+        <button id="quit" class="hidden" title="Close FPV Sim">Quit</button>
+      </header>
+      <main>
+        <section id="tab-drones" class="tab active">
+          <div id="drone-list" class="cards"></div>
+          <div id="drone-detail" class="detail"></div>
+        </section>
+        <section id="tab-maps" class="tab"><div id="map-list" class="cards wide"></div></section>
+        <section id="tab-controls" class="tab"><div id="controls"></div></section>
+        <section id="tab-multiplayer" class="tab">
+          <div id="mp-ask-name" class="mp-box hidden">
+            <h2>Choose your user name</h2>
+            <p class="sub">Other pilots see this name. You can change it later in Settings.</p>
+            <div class="row"><input id="mp-name" type="text" maxlength="20" placeholder="Your name" /><button id="mp-name-save" class="fly">Save</button></div>
+            <p class="mp-err" id="mp-name-err"></p>
+          </div>
+          <div id="mp-servers-wrap" class="hidden">
+            <div class="mp-box">
+              <div class="row mp-head"><h2>Servers</h2><span class="sub">You are <b id="mp-you"></b> (change it in Settings)</span><span class="rp-gap"></span><a class="btn-link" href="https://guyka2212.github.io/flysim-servers/" target="_blank" rel="noopener">🌐 Host your own server</a></div>
+              <div class="row"><input id="mp-address" type="text" placeholder="Address: 192.168.1.20:25580 or name.gl.joinmc.link:12345" /><input id="mp-label" type="text" placeholder="Name (optional)" /><button id="mp-add" class="fly">Add server</button></div>
+              <p class="mp-err" id="mp-add-err"></p>
+            </div>
+            <div id="mp-servers" class="cards wide"></div>
+          </div>
+        </section>
+        <section id="tab-pass" class="tab"><div id="pass"></div></section>
+        <section id="tab-records" class="tab"><div id="records-list" class="cards wide"></div></section>
+        <section id="tab-settings" class="tab"><div id="settings"></div></section>
+        <section id="tab-plugins" class="tab"><div id="plugins"></div></section>
+      </main>
+    </div>
+
+    <div id="pause" class="hidden">
+      <div class="panel">
+        <h2>Paused</h2>
+        <button id="resume" class="fly">Resume</button>
+        <button id="restart">Restart</button>
+        <button id="pause-map">Map / teleport</button>
+        <button id="pause-rec">Start recording</button>
+        <button id="vr-resume" class="hidden">Back into VR</button>
+        <button id="pause-leave" class="hidden">Back to lobby</button>
+        <button id="to-menu">Main menu</button>
+      </div>
+    </div>
+
+    <div id="mp-joining" class="hidden"><div class="panel"><div class="spinner"></div><p id="mp-joining-text"></p></div></div>
+
+    <div id="mp-lobby" class="hidden">
+      <div class="panel mp-lobby-panel">
+        <div class="row mp-head">
+          <div><h2 id="mp-server-name"></h2><div class="sub" id="mp-motd"></div></div>
+          <span class="rp-gap"></span>
+          <span class="sub" id="mp-address-shown"></span>
+          <button id="mp-leave">Leave</button>
+        </div>
+        <div class="mp-cols">
+          <div class="mp-col">
+            <h3>Pilots <span class="sub" id="mp-count"></span></h3>
+            <ul id="mp-players"></ul>
+            <div class="sub" id="mp-rules"></div>
+            <label class="mp-drone">Your drone <select id="mp-drone"></select></label>
+          </div>
+          <div class="mp-col mp-main">
+            <p id="mp-wait" class="mp-wait"></p>
+            <button id="mp-start" class="fly mp-start hidden">Start</button>
+            <div id="mp-vote" class="hidden">
+              <div class="row mp-head"><h3>Vote for a map</h3><span class="rp-gap"></span><span class="mp-left" id="mp-vote-left"></span></div>
+              <div id="mp-vote-maps" class="cards mp-vote-maps"></div>
+            </div>
+          </div>
+          <div class="mp-col">
+            <div id="mp-chat" class="mp-chat">
+              <h3>Chat</h3>
+              <div id="mp-chat-log"></div>
+              <div class="row"><input id="mp-chat-input" type="text" maxlength="200" placeholder="Say something" /><button id="mp-chat-send">Send</button></div>
+            </div>
+            <div id="mp-owner-tools" class="hidden">
+              <h3>Server console <span class="sub">(owner)</span></h3>
+              <div class="row"><input id="mp-cmd" type="text" placeholder="kick, ban, tp, say, map, set… (help)" /><button id="mp-cmd-send">Run</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="mapview" class="hidden">
+      <div class="panel map-panel">
+        <div class="map-head">
+          <h2 id="mapview-title">Map</h2>
+          <span class="sub">Click anywhere on the map or pick a spot to teleport there</span>
+          <button id="mapview-close">Close (M)</button>
+        </div>
+        <div class="map-body">
+          <div class="map-wrap"><img id="mapview-img" alt="Map" /><canvas id="mapview-marks"></canvas></div>
+          <div id="mapview-spots" class="map-spots"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="rec-name" class="hidden">
+      <div class="panel">
+        <h2>Save recording</h2>
+        <p class="sub" id="rec-name-info"></p>
+        <input id="rec-name-input" type="text" maxlength="60" />
+        <div class="row">
+          <button id="rec-discard">Discard</button>
+          <button id="rec-save" class="fly">Save</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="replay" class="hidden">
+      <div class="rp-top">
+        <button id="rp-back">◀ Records</button>
+        <input id="rp-name" type="text" maxlength="60" />
+        <span id="rp-info" class="sub"></span>
+        <button id="rp-export" class="fly">Export video</button>
+      </div>
+      <div class="rp-bottom">
+        <div id="rp-timeline"><div id="rp-cuts"></div><div id="rp-mark"></div><div id="rp-head"></div></div>
+        <div class="rp-row">
+          <button id="rp-start" title="To the start">⏮</button>
+          <button id="rp-back5" title="Back 5 s">−5s</button>
+          <button id="rp-play" class="fly">▶ Play</button>
+          <button id="rp-fwd5" title="Forward 5 s">+5s</button>
+          <span id="rp-time"></span>
+          <span class="rp-gap"></span>
+          <button id="rp-in">Mark start</button>
+          <button id="rp-cut">Cut to here</button>
+          <div id="rp-cutlist"></div>
+        </div>
+        <div class="rp-row">
+          <label><input type="checkbox" id="rp-osd" /> OSD / UI</label>
+          <label>Camera <select id="rp-cam"><option value="fpv">FPV</option><option value="chase">Chase</option><option value="los">Line of sight</option></select></label>
+          <label><input type="checkbox" id="rp-motor" /> Drone sound <input type="range" id="rp-motor-vol" min="0" max="1.5" step="0.05" /></label>
+          <label class="rp-music">Music <button id="rp-music-pick">Add…</button><span id="rp-music-name"></span><button id="rp-music-del" title="Remove music">✕</button><input type="range" id="rp-music-vol" min="0" max="1.5" step="0.05" /></label>
+          <input type="file" id="rp-music-file" accept="audio/*" class="hidden" />
+          <label><input type="checkbox" id="rp-names" /> Player names <small></small></label>
+        </div>
+      </div>
+      <div id="rp-progress" class="hidden">
+        <div class="panel">
+          <h2>Exporting video…</h2>
+          <div class="bar"><i id="rp-progress-bar"></i></div>
+          <p class="sub" id="rp-progress-text"></p>
+          <div class="row"><button id="rp-progress-cancel">Cancel</button></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="wizard" class="hidden">
+      <div class="panel wide">
+        <h2 id="wiz-title"></h2>
+        <div id="wiz-step"></div>
+        <p id="wiz-text"></p>
+        <div id="wiz-axes"></div>
+        <div id="wiz-detected"></div>
+        <div class="row">
+          <button id="wiz-back">Back</button>
+          <button id="wiz-skip">Skip</button>
+          <button id="wiz-cancel">Cancel</button>
+          <button id="wiz-next" class="fly">Next</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
