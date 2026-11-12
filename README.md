@@ -8,7 +8,7 @@ npm run dev      # http://localhost:5173
 npm test         # physics / flight-controller tests
 ```
 
-**Open source (MIT).** Download the game: https://guyka2212.github.io/fpv-sim/ · Make plugins: https://guyka2212.github.io/fpv-sim/plugins.html · Host a server: https://guyka2212.github.io/flysim-servers/ (server code: [guyka2212/flysim-servers](https://github.com/guyka2212/flysim-servers)). Builds of the Windows app and APK aren't in this repo: run `build-installer.bat` and `android-appuild.bat` (see below), or get them from the [releases](https://github.com/guyka2212/fpv-sim/releases). Accounts and the Flight Path use a Supabase project; its key in `src/progress/account.ts` is the public (publishable) one, and the database's access rules are in `supabase/migrations/`.
+**Open source (MIT).** Download the game: https://guyka2212.github.io/fpv-sim/ · Make plugins: https://guyka2212.github.io/fpv-sim/plugins.html · Host a server: https://guyka2212.github.io/flysim-servers/ (server code: [guyka2212/flysim-servers](https://github.com/guyka2212/flysim-servers)). Builds of the Windows app and APK aren't in this repo: run `build-installer.bat` and `android-app/build.bat` (see below), or get them from the [releases](https://github.com/guyka2212/fpv-sim/releases). Accounts and the Flight Path use a Supabase project; its key in `src/progress/account.ts` is the public (publishable) one, and the database's access rules are in `supabase/migrations/`.
 
 ## Make your own version
 
@@ -206,7 +206,7 @@ The desktop app has a **Quit** button in the menu. Messages such as VR errors ap
 - **Game website:** https://guyka2212.github.io/fpv-sim/ (repo `guyka2212/fpv-sim`, source in `Game-Website/`). Downloads come from the repo's GitHub releases: `FPV-Sim-Setup.exe` and `FPV-Sim.apk`.
 - **Server website:** https://guyka2212.github.io/flysim-servers/ (repo `guyka2212/flysim-servers`, source in `Servers-Website/`).
 - **Windows installer:** `build-installer.bat` builds the app and then `release\FPV-Sim-Setup.exe` with Inno Setup 6.7+ (`winget install JRSoftware.InnoSetup`). Script and artwork: `desktop/installer/`. It installs per user (no admin), in a dark wizard in English or Hebrew, with Start menu and desktop shortcuts and an uninstaller.
-- **New release:** bump `version` in package.json, run `build-installer.bat` and `android-appuild.bat`, copy the APK to `release\FPV-Sim.apk`, then `gh release create vX.Y.Z release/FPV-Sim-Setup.exe release/FPV-Sim.apk --repo guyka2212/fpv-sim`.
+- **New release:** bump `version` in package.json, run `build-installer.bat` and `android-app/build.bat`, copy the APK to `release\FPV-Sim.apk`, then `gh release create vX.Y.Z release/FPV-Sim-Setup.exe release/FPV-Sim.apk --repo guyka2212/fpv-sim`.
 
 ## Desktop app
 
