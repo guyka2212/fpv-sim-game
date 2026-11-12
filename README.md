@@ -218,7 +218,7 @@ Rebuild it by double-clicking **`build-app.bat`**, or from cmd:
 build-app.bat nopause
 ```
 
-(`nopause` skips the "press any key" at the end. The batch file runs `desktopuild.ps1`.)
+(`nopause` skips the "press any key" at the end. The batch file runs `desktop/build.ps1`.)
 
 VR in the app: Electron has no WebXR, so the app ships `FlySimXR.exe`, a small native OpenXR program, just as VrFsim uses Unity's OpenXR plugin. The app streams its window (FPV view and OSD) to it, and it shows that picture in the headset as a head-locked goggle screen, on the graphics card Quest Link asks for. Source: `desktop/xr/FlySimXR.cs`. It uses the Khronos `openxr_loader.dll` (Apache-2.0), copied from the VrFsim build by `desktop/xr/build-xr.ps1`.
 
