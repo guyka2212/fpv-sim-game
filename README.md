@@ -10,6 +10,26 @@ npm test         # physics / flight-controller tests
 
 **Open source (MIT).** Download the game: https://guyka2212.github.io/fpv-sim/ · Make plugins: https://guyka2212.github.io/fpv-sim/plugins.html · Host a server: https://guyka2212.github.io/flysim-servers/ (server code: [guyka2212/flysim-servers](https://github.com/guyka2212/flysim-servers)). Builds of the Windows app and APK aren't in this repo: run `build-installer.bat` and `android-appuild.bat` (see below), or get them from the [releases](https://github.com/guyka2212/fpv-sim/releases). Accounts and the Flight Path use a Supabase project; its key in `src/progress/account.ts` is the public (publishable) one, and the database's access rules are in `supabase/migrations/`.
 
+## Make your own version
+
+You're welcome to change anything and release your own app (MIT license: keep the `LICENSE`
+file with its copyright line). Fork this repo, then give your copy its own identity so it
+installs next to FPV Sim instead of over it, and uses your own accounts database:
+
+| What | Where | Why |
+|---|---|---|
+| Android app id | `android-app/app/build.gradle.kts`: `applicationId` (and `namespace`) | Same id = Android treats it as FPV Sim and replaces it |
+| Android app name | `android-app/app/src/main/AndroidManifest.xml`: `android:label` | Name under the icon |
+| Windows app name | `desktop/electron/package.json`: `name`, `productName` | Window title, install folder, saved data |
+| Installer | `desktop/installer/FlySim.iss`: `AppName`, `Site`, `ServersSite`, and a **new** `AppId` GUID | Same AppId = the installer upgrades FPV Sim instead of adding yours |
+| Accounts / Flight Path | `src/progress/account.ts`: `SUPABASE_URL`, `SUPABASE_KEY` | Make a free Supabase project, run `supabase/migrations/` on it, put its URL and publishable key here |
+| Links | `index.html` and `src/net/multiplayer.ts` (server site), `src/plugins/pluginsTab.ts` (plugin docs) | Point them at your own sites, or keep them |
+| Look | `public/` (icons, models), `src/style.css`, `desktop/installer/*.png` | Your own branding |
+
+Multiplayer servers come from [guyka2212/flysim-servers](https://github.com/guyka2212/flysim-servers);
+copies of the game can join the same servers as long as the network protocol (`PROTOCOL` in
+`src/net/client.ts`) matches.
+
 ## Drones and maps
 
 | Drone | Based on | Home map |
